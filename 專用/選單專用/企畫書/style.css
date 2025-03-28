@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+    min-height: 100vh; /* 保證頁面至少和視口一樣高 */
+    overflow-x: hidden; /* 禁止水平滾動 */
+    position: relative; /* 使元素定位相對於body */
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em;
+    color: #359381;
+    pointer-events: none;
+    margin-right: 250px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 10px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: #359381;
+    color: #fff;
+}
+
+.Parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 確保背景圖片區塊完全佔據視窗高度 */
+    overflow: hidden; /* 確保不會因背景圖片或內容過大而出現滾動 */
+}
+
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.Parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* 確保圖片高度覆蓋整個視窗 */
+    object-fit: cover; /* 保持圖片比例並覆蓋背景區域 */
+    pointer-events: none;
+}
+
+.sec {
+    position: relative;
+    background: #003329;
+    padding: 100px;
+    min-height: calc(100vh - 200px); /* 確保該區塊最少佔據剩餘視窗高度，避免過度增長 */
+}
+
+.sec h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.sec h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 300;
+}
+
+.sec h4 {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 200;
+}
